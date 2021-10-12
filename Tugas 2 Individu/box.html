@@ -42,7 +42,7 @@
                 heartShape.bezierCurveTo( x + 1.4, y, x + 1, y + 1, x + 1, y + 1 );
 
                 const geometry = new THREE.ShapeGeometry( heartShape );
-                const material = new THREE.MeshBasicMaterial( { color: 'pink', wireframe:true });
+                const material = new THREE.MeshBasicMaterial( { color: 'pink', wireframe:false, side: THREE.DoubleSide });
                 heart = new THREE.Mesh( geometry, material ) ;
                 scene.add( heart );
         }
